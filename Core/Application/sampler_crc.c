@@ -8,7 +8,7 @@
 #include "main.h"
 
 static uint16_t crc16_lut[256];
-static const uint16_t poly = 0x1021;
+static const uint16_t poly = 0xA001;
 static const uint16_t init_crc = 0xffff;
 
 void sampler_precalc_crc16_lut(void) {
