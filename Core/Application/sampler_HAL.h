@@ -41,7 +41,7 @@ typedef struct {
 
 uint8_t sampler_get_pin_val(void);
 void 	sampler_init_pinout(void);
-void 	sampler_send_packet(uint8_t *, uint8_t);
+void 	sampler_send_packet(uint8_t *, uint16_t);
 void 	sampler_wait_trans_cplt(void);
 
 #endif /* USE_CUBE_IDE_HAL */

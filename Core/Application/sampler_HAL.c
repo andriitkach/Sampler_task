@@ -63,8 +63,8 @@ void sampler_wait_trans_cplt(void) {
 	while(HAL_UART_GetState(&huart2) != HAL_UART_STATE_READY) {}
 }
 
-void sampler_send_packet(uint8_t * packet_start, uint8_t packet_size) {
-	HAL_UART_Transmit_DMA(&huart2, packet_start, (uint16_t)packet_size);
+void sampler_send_packet(uint8_t * packet_start, uint16_t packet_size) {
+	HAL_UART_Transmit_DMA(&huart2, packet_start, packet_size);
 }
 
 #endif /* USE_CUBE_IDE_HAL */
